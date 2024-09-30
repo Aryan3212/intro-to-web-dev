@@ -6,6 +6,13 @@
     <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #second-section {
+        display: flex;
+        padding: 2rem;
+        justify-content: space-between;
+      }
+    </style>
   </head>
 
   <body>
@@ -18,6 +25,19 @@
       <a href="alive.html">Alive Page</a>
     </div>
     <div id="first-section">
+      <div>
+        <form id="task-form-one">
+          <input type="text">
+          <button type="sumbit">Submit</button>
+        </form>
+      </div>
+      <div>
+        <h4>Task List</h4>
+        <ul id="task-list-one">
+        </ul>
+      </div>
+    </div>
+    <div id="second-section">
       <div>
         <form id="task-form">
           <input type="text">
