@@ -3,6 +3,7 @@ An intro to web dev
 
 My open discord community for beginners: https://discord.gg/NruUCYepn9
 
+Slides: https://docs.google.com/presentation/d/1CGSYJtHbh3wj_6_WPnTljTeez0SCzAkd5zpHPDPv5C8/edit#slide=id.g2f908e7074f_1_1
 
 Resources and things I mentioned:
 My PHP project: https://github.com/Aryan3212/Library-Management
