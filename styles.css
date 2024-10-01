@@ -52,8 +52,9 @@ a:hover {
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  color: orange;
 }
 
 #first-section {
@@ -71,7 +72,7 @@ a:hover {
 }
 
 .movie-section > h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .movie-section ol {

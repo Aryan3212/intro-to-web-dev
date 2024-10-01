@@ -28,8 +28,7 @@ app.post('/thoughts', (req, res) => {
     return res.status(400).json({ error: 'Thought is required' });
   }
 
-  const sql = 'INSERT INTO thoughts (thought) VALUES (?)';
-  db.run(sql, [thought], function(err) {
+  db.run('INSERT INTO thoughts (thought) VALUES (?)', [thought], function(err) {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
@@ -38,13 +37,13 @@ app.post('/thoughts', (req, res) => {
 });
 
 // Get last 5 thoughts endpoint
-app.get('/thoughts', (req, res) => {
+app.get('/thoughts', (request, response) => {
   const sql = 'SELECT * FROM thoughts ORDER BY createdAt DESC LIMIT 5';
   db.all(sql, [], (err, rows) => {
     if (err) {
-      return res.status(500).json({ error: err.message });
+      return response.status(500).json({ error: err.message });
     }
-    res.json(rows);
+    response.json(rows);
   });
 });
 

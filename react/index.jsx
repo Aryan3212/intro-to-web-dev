@@ -17,6 +17,9 @@ function TaskList() {
       <button type='submit' >
         Submit
       </button>
+      <button onClick={() => setTaskList([])}>
+        Remove
+      </button>
     </form>
     <ul>
       {taskList.map((task, i) => <li key={i}>{task}</li>)}
